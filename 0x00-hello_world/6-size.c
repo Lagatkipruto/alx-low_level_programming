@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - Prints the size of various types based on the computer its compiled on.
+ * main - Prints the size of various types based on the computer
  *
  * Retun: Always 0.
  */
