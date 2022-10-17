@@ -1,10 +1,12 @@
 #include<stdio.h>
 
 /**
+ *
  * main - Prints the size of various types based on computer compiled
  *
  * Retun: Always 0 (Success)
  */
+
 int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
