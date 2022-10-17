@@ -1,17 +1,12 @@
 #include<stdio.h>
 
 /**
- * main - Prints the size of various types of C
+ * main - Prints the size of various types based on computer compiled
  *
- * Retun: 0
+ * Retun: Always 0 (Success)
  */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	float f;
-
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
 	printf("Size of an int: %ld byte(s)\n", sizeof(int));
 	printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
