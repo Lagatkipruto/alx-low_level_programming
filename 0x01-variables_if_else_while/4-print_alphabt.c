@@ -2,17 +2,18 @@
 
 /**
  * main-program entry point.
+ *
  * Return:0 if no error, non zero if error.
- **/
+ */
 int main(void)
 {
-char i;
+	char letter;
 
-for (i == 'a'; i <= 'z'; i++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-	if (i == 'e' || i == 'q')
+		if (letter == 'e' && letter == 'q')
 		continue;
-	putchar(i);
+		putchar(letter);
 	}
 	putchar('\n');
 	return (0);
