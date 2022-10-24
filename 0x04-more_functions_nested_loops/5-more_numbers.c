@@ -2,14 +2,18 @@
 #include <stdio.h>
 
 /**
- * more_numbers - Prints the numbers 0-14 ten times
+ * more_numbers - Prints the numbers 0 to 14 ten times
+ * void: No Input Parameter
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and error is set appropriately.
  */
 void more_numbers(void)
 {
 
 	int num, count;
 
-	for (count = 0; num <= 14; count++)
+	for (count = 0; num <= 10; count++)
 	{
 		for (num = 0; num <= 14; num++)
 		{
