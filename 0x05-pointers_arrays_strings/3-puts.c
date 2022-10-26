@@ -4,11 +4,11 @@
  * _puts - Prints a string to stdout.
  * @str: The string to be printed.
  */
-void puts(char *str)
+void _puts(char *str)
 {
 
 	while (*str)
-		putchar(*str++);
+		_putchar(*str++);
 
 	_putchar('\n');
 }
