@@ -11,7 +11,6 @@
  */
 void *_memset(void *s, int c, size_t n)
 {
-	void memset;
 	
 	unsigned int index;
 	unsigned char *memory = s, value = c;
