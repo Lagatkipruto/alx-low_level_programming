@@ -24,7 +24,7 @@ int main(void)
 
 
 
-    s = 67 + SIZE;
+    s = 98 + SIZE;
 
     printf("%d\n", s);
 
