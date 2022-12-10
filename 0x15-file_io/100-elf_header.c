@@ -200,6 +200,17 @@ printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 * @e_type: The ELF type.
 * @e_ident: A pointer to an array containing the ELF class.
 */
+void print_abi(unsigned char *e_ident)
+{
+printf("  ABI Version:                   %d\n",
+		e_ident[EI_ABIVERSION]);
+}
+
+/**
+  * print_type - prints the type of an ELF header.
+  * @e_type: The ELF type.
+  * @e_ident: A pointer to an array containing the ELF class.
+  */
 void print_type
 (unsigned int e_type, unsigned char *e_ident)
 {
@@ -296,7 +307,7 @@ Elf64_Ehdr *header;
 int o, r;
 
 o = open(argv[1], O_RDONLY);
-if (header == NULL)
+if (o == -1)
 {
 
 dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
@@ -306,7 +317,7 @@ header = malloc(sizeof(Elf64_Ehdr));
 if (header == NULL)
 {
 
-close_elf(0);
+close_elf(o);
 dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 exit(98);
 }
