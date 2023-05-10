@@ -3,10 +3,9 @@
 /**
 * binary_search - searches for a value in sorted array of integers using
 * binary search algorithm.
-*
-* @array - a pointer to the first element of the array to search.
-* @size - is the number of elements in the array.
-* @value - tjhe value of the element to search for.
+* @array: a pointer to the first element of the array to search.
+* @size: is the number of elements in the array.
+* @value: tjhe value of the element to search for.
 *
 * Return: If the value is not present or array is NULL, -1.
 * Otherwise, the index where the value is recorded.
